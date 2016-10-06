@@ -27,13 +27,16 @@ You have to follow the below steps:
 
 
 Calendar contains three view listed below
+```objective-c
 	@property (strong, nonatomic) UIView *viewTitleBar;
 	@property (strong,nonatomic) UIView * viewWeekDay;
 	@property (strong, nonatomic) UIView *viewCalendarContainer;
+```
 
 •	The empty space below calendar can be utilize to show any listing
 •	You can list the event with date 
 Ex.
+```objective-c
 	- (void)getEventOfSelectedMonth
 	{
 
@@ -42,10 +45,10 @@ Ex.
 	arrayofEventDate = [[NSMutableArrayalloc] initWithObjects:@"2016-07-08",@"2016-08-17", nil];
 
 	}
-
+```
 ## Implementation
 Just call following methods
-
+```objective-c
 	// initialize calendar component
 
 	[selfinitBasicComponant];
@@ -61,11 +64,11 @@ Just call following methods
 	// setBackgroundColor to MonthView
 
 	    [selfsetBackgroundColorOfMonthView:[UIColorlightGrayColor]];
-
+```
 ## Initialize Month with given date
-
+```objective-c
 	  [selfinitMonthView:current_date];
-
+```
 Generate Month -
 
 •	First of all get number of weeks in the month, so we can determine how many rows we need.
@@ -78,7 +81,7 @@ Generate Month -
 
 
 Get selected date.
-
+```objective-c
 	- (void)getEventOfSelectedDate : (UIButton*)sender
 	{
 
@@ -94,7 +97,7 @@ Get selected date.
 
 	NSLog(@"selected date %@",dateStr);
 	}
-
+```
 
 ## Customize the design
 Change calendar’s Theme color by changing THEME_COLOR’s RGB from Constant file.
@@ -104,14 +107,14 @@ To change the color of title, month-year as well the background color of the day
 Change month background color by calling method
 
 Ex.
-
+```objective-c
 	- (void)setBackgroundColorOfMonthView:(UIColor*)color
 	{
 
 	    [_viewCalendarBackgroundsetBackgroundColor:color];
 
 	}
-
+```
 
 For customize the design you have to implement some methods depending on what parts you want to custom. To change the event indicator color you need to change the code as shown above.
 
@@ -124,17 +127,17 @@ And UISwipeGestureRecognizerDirectionUp for swip_left,
 Instead of right and left direction
 
 Replace below code:
-
+```objective-c
 	[swipe_rightsetDirection:(UISwipeGestureRecognizerDirectionRight)];
 
 	[swipe_leftsetDirection:(UISwipeGestureRecognizerDirectionLeft)];
-
+```
 With
-
+```objective-c
         [swipe_rightsetDirection:(UISwipeGestureRecognizerDirectionDown)];
 
         [swipe_leftsetDirection:(UISwipeGestureRecognizerDirectionUp)];
-
+```
 ## Requirements
 •	iOS8 or higher
 •	Automatic Reference Counting (ARC)
