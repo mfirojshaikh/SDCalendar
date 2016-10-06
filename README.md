@@ -59,15 +59,15 @@ Just call following methods
 
 	// create month view
 
-	    [selfinitUIComponant];
+	[selfinitUIComponant];
 
 	// setBackgroundColor to MonthView
 
-	    [selfsetBackgroundColorOfMonthView:[UIColorlightGrayColor]];
+	[selfsetBackgroundColorOfMonthView:[UIColorlightGrayColor]];
 ```
 ## Initialize Month with given date
 ```objective-c
-	  [selfinitMonthView:current_date];
+	 [selfinitMonthView:current_date];
 ```
 Generate Month -
 
@@ -76,9 +76,9 @@ Generate Month -
 •	Then create each row with 7 columns for completing one week.
 
 •	Generate month view
-
-•		-(void)genrateMonthView:(NSDate*)startDateinView:(UIView*)viewCalBg
-
+```objective-c
+•	- (void)genrateMonthView:(NSDate*)startDateinView:(UIView*)viewCalBg
+```
 
 Get selected date.
 ```objective-c
@@ -87,7 +87,7 @@ Get selected date.
 
 	NSDateFormatter *dateFormatter = [[NSDateFormatteralloc] init];
 
-	    [dateFormattersetDateFormat:@"MM-yyyy"];
+	[dateFormattersetDateFormat:@"MM-yyyy"];
 
 	NSString *strMonth = [[dateFormatterstringFromDate:current_date] componentsSeparatedByString:@"-"][0];
 
@@ -96,6 +96,7 @@ Get selected date.
 	NSString *dateStr = [NSStringstringWithFormat:@"%@-%@-%ld",strYear,strMonth,(sender.tag + 2) - weekStartDay];
 
 	NSLog(@"selected date %@",dateStr);
+	
 	}
 ```
 
