@@ -9,6 +9,11 @@ Just drag Month View group in your application from the project.
 The purpose of this calendar is to show how we can create our own custom calendar with minimum code.
 Screenshots
   
+## Screenshots
+
+![Example](./Screens/example.png "Example View")
+![Example](./Screens/example2.png "Example View")
+
 ## Warning
 •	Gregorian Calendar only
 ## Features
