@@ -11,7 +11,6 @@ Screenshots
   
 ## Screenshots
 
-![Example](./Screens/example.png "Example View")
 ![Example](./Screens/example2.png "Example View")
 
 ## Warning
