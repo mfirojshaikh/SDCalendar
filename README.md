@@ -11,7 +11,7 @@ Screenshots
   
 ## Screenshots
 
-![Example](./Screens/example.gif"Example View")
+![Example](./Screens/example.gif "Example View")
 
 ## Warning
 •	Gregorian Calendar only
