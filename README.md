@@ -29,7 +29,7 @@ You have to follow the below steps:
 Calendar contains three view listed below
 ```objective-c
 	@property (strong, nonatomic) UIView *viewTitleBar;
-	@property (strong,nonatomic) UIView * viewWeekDay;
+	@property (strong, nonatomic) UIView * viewWeekDay;
 	@property (strong, nonatomic) UIView *viewCalendarContainer;
 ```
 
