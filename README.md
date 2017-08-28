@@ -144,7 +144,7 @@ With
 •	Automatic Reference Counting (ARC)
 
 ## Author
-	Stark digital Media Services Pvt. Ltd.
+	Firoj A. Shaikh.
 
 ## License
 SDCalendar is released under the MIT license. See the LICENSE file for more info.
